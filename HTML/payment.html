@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../CSS/paymentStyle.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="home.html">
+            <img class="logo" src="../svg/logo.svg" alt="">
+        </a>
+        
+        <ul>
+            <li>
+                <p class="menu">Menu <i class="fas fa-caret-down"></i></p>
+                <ul>
+                    <li><a href="beverage.html">Beverages</a></li>
+                    <li><a href="dessert.html">Desserts</a></li>
+                </ul>   
+            </li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li>
+                <div class="iconShopping">
+				<p id="total-counter">0</p>
+				<a href="payment.html">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+			    </div>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+
+        <div class="wrapper">
+            <div class="title">
+                <h1>Checkout</h1>
+            </div>
+
+            <div class="form">
+                <div class="form-detail">
+                    <div class="error"></div>
+                    <div class="input">
+                        <p>Name</p>
+                        <input type="text" class="input-border" id="name">
+                    </div>
+                    <div class="input">
+                        <p>Email</p>
+                        <input type="email" class="input-border" id="email">
+                    </div>
+                    <div class="input">
+                        <p>City</p>
+                        <input type="text" class="input-border"id="city">
+                    </div>
+                    <div class="input">
+                        <p>Address</p>
+                        <textarea name="" id="address" cols="30" rows="10" class="input-address"></textarea>
+                    </div>
+
+                    <div class="disclaimer">
+                        <u>Disclaimer</u>
+                        <p>*Delivery fee is free*</p>
+                    </div>
+
+                </div>
+
+                <div class="form-payment">
+                    <div class="total-wrapper">
+                        <p>Total:</p>
+                        <p>Rp. 0</p>
+                    </div>
+
+                    <div class="choose-payment">
+                        <p>Payment method</p>
+                        <div class="visa-choose">
+                            <input type="radio" name="payment" class="button button-visa" checked> 
+                            <label for="">Visa</label>
+                        </div>
+                        <div class="paypal-choose">
+                            <input type="radio" name="payment" class="button button-paypal"> 
+                            <label for="">Paypal</label>
+                        </div>
+                    </div>
+
+                    <div class="visa-payment">
+                        <div class="visa-detail">
+                            <div class="card-number">
+                                <p>Card Number</p>
+                                <div class="visa-box">
+                                    <input type="text" class="visa-border" maxlength="4" onkeypress="return visaValidate(event)">
+                                    <input type="text" class="visa-border" maxlength="4" onkeypress="return visaValidate(event)">
+                                    <input type="text" class="visa-border" maxlength="4" onkeypress="return visaValidate(event)">
+                                    <input type="text" class="visa-border" maxlength="4" onkeypress="return visaValidate(event)">
+                                </div>
+                            </div>
+                            <div class="visa-validity">
+                                <p>Validity</p>
+                                <input type="date" class="visa-date" required>
+                            </div>
+                            <div class="cvv-number">
+                                <p>CVV Number</p>
+                                <div class="cvv-box">
+                                    <input type="text" class="cvv-border" maxlength="3" onkeypress="return visaValidate(event)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="paypal-payment">
+                        <a href="https://www.paypal.com/">
+                            <button class="paypal-pay"><img src="../svg/paypalLogo.png" alt=""></button>
+                        </a>
+                    </div>
+
+                    <div class="term-condition">
+                        <input type="checkbox" class="term-condition-checkbox">
+                        <label for="">I agree with the terms and condition</label>
+                    </div>
+
+                    <div class="checkout-button-wrapper">
+                        <button class="checkout-button">Check out</button>
+                    </div>
+
+                    <script src="../JS/validationPayment.js"></script>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerLogo">
+            <a href="https://www.instagram.com/" target="_blank"><img class="footlogoimg" src="../svg/instagram.svg" alt=""></a>
+            <a href="https://www.facebook.com/" target="_blank"><img class="footlogoimg" src="../svg/facebook.svg" alt=""></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="footlogoimg" src="../svg/linked-in.svg" alt=""></a>
+            <a href="https://twitter.com/" target="_blank"><img class="footlogoimg" src="../svg/twitter.svg" alt=""></a>
+        </div>
+        
+        <div class="content">
+            <a href="home.html">HOME</a>
+            <a href="">MENU</a>
+            <a href=""><img src="../svg/logo.svg" alt=""></a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="payment.html">PAYMENT</a>
+        </div>
+
+        <div class="copyright">
+            <p>COPYRIGHT &#xa9; 2021</p>
+        </div>
+
+        <div class="disclaimer">
+            <u>Disclaimer</u>
+            <p>*Delivery fee is free*</p>
+        </div>
+    </footer>
+    <script src="../JS/choosePayment.js"></script>
+</body>
+</html>

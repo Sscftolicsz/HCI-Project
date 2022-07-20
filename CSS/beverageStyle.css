@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    background-color: #f1921a;
+    height: 5rem;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar .menu:hover{
+    cursor: default;
+}
+
+.navbar a{
+    position: relative;
+    max-width: 1rem;
+}
+
+.navbar a .logo{
+    margin-left: 10px;
+    width: 100px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    margin-right: 3%;
+}
+
+.navbar ul a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.navbar ul a:hover{
+    color:white;
+}
+
+.navbar ul li{
+    display: block;
+}
+
+.navbar ul li ul{
+    background-color: wheat;
+    position: absolute;
+    width: inherit;
+    margin-top: 2px;
+}
+
+.navbar ul li ul li{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar ul li ul{
+    display: none;
+}
+
+.navbar ul li:hover .menu{
+    color: white;
+}
+
+.navbar ul li:hover ul{
+    display: block;
+}
+
+.navbar ul li #troli{
+    width: 30px;
+}
+
+@media screen and (max-width: 500px){
+    nav ul li{
+        display: block;
+        width: 100%; 
+    }
+    nav ul li ul{
+        position: relative;
+    }
+}
+
+/* troli */
+
+.navbar ul li .iconShopping{
+	cursor: pointer;
+	position: relative;
+	font-size: 1.1rem;
+}
+
+.navbar ul li .iconShopping p{
+	position: absolute;
+	top: -5px;
+	right: 2px;
+	font-size: 0.69rem;
+	background-color:white;
+	padding: 0px 5px;
+	border-radius: 60%;
+    z-index: 1;
+}
+
+/* Description */
+.descriptionWrapper{
+    padding-top: 120px;
+    margin: 0px 200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.descriptionWrapper .description{
+    display: flex;
+    flex-direction: row;
+}
+
+.descriptionWrapper .description .text{
+    width: 60%;
+    text-align: justify;
+    margin-right: 20px;
+    flex-grow: 2;
+}
+
+.descriptionWrapper .description .pic img{
+    width: 170px;
+    flex-grow: 1;
+}
+
+
+.signatureWrapper{
+    margin: 0px 300px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Signature*/
+.sigCoffee{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.sigCoffee .pic img{
+    width: 500px;
+    margin-top: 20px;
+}
+
+.sigCoffee .desc{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.items-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items{
+    display: flex;
+}
+
+.perItem{
+    border: 0.5px solid rgb(160, 88, 49);
+    margin-top: 35px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;  
+}
+
+.middle{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.perItem img{
+    width: 200px;
+    height: 200px;
+}
+
+.perItem button{
+    width: 150px;
+    border-radius: 7px;
+    background-color: white;
+    border-color: rgb(160, 88, 49);
+    border-width: 0.5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.perItem button:hover{
+    background-color: #f1921a;
+}
+
+.descriptionWrapper .pic{
+    display: flex;
+}
+
+/* Footer */
+footer{
+    margin-top: 50px;
+    height: 100%;
+    background-color: #f1921a;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footerLogo{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+footer .footerLogo .footlogoimg{
+    width: 70px;
+    height: 70px;
+}
+
+footer .footerLogo .footlogoimg a{
+    padding: 0px;
+}
+
+footer .content{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 430px;
+    align-items: center;
+    margin: 5px 15px;
+    margin-left: 5%;
+}
+
+footer .content a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+footer .content a:hover{
+    color: #e7bb85;
+    transition: 0.3s;
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+footer .content a img{
+    width: 100px;
+}
+
+footer .disclaimer{
+    text-align:right;
+    color: black;
+}
+
+footer .disclaimer{
+    text-align:right;
+    color: black;
+}
+
+.disclaimer u{
+    color: red;
+    margin-right: 2%;
+}
+

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../CSS/homeStyle.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="home.html">
+            <img class="logo" src="../svg/logo.svg" alt="">
+        </a>
+        
+        <ul>
+            <li>
+                <p class="menu">Menu <i class="fas fa-caret-down"></i></p>
+                <ul>
+                    <li><a href="beverage.html">Beverages</a></li>
+                    <li><a href="dessert.html">Desserts</a></li>
+                </ul>   
+            </li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li>
+                <div class="iconShopping">
+				<p id="total-counter">0</p>
+				<a href="payment.html">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+			    </div>
+            </li>
+        </ul>
+    </div>
+    
+    
+    <slideShow>
+        <div class="slideshowContainer">
+            <div class="button">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            </div>
+            <div class="perSlide">
+                <img class="imgSlide" src="../svg/slide1.svg" alt="">
+            </div>
+            <div class="perSlide">
+                <img class="imgSlide" src="../svg/slide2.svg" alt="">
+            </div>
+            <div class="perSlide">
+                <img class="imgSlide" src="../svg/slide3.svg" alt="">
+            </div>
+            
+            <div class="button">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="slideDot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <br>
+        <br><br><br><br>
+    
+        <script src="../JS/slideshow.js"></script>
+    </slideShow>
+
+    <product>
+
+        <div class="newProduct">
+            <h2>New Product</h2>
+            <div class="NPimg">
+                <div class="perImage">
+                    <input type="hidden" name="" id="product-id" value="1" />
+                    <img src="../svg/kopi.png" alt="" id="image">
+                    <p class="product-name">Matcha Latte</p>
+                    <p class="product-price">Rp 30.000,00</p>
+                    <button type="button" class="add">Add   </button>
+                </div>
+                <div class="perImage">
+                    <input type="hidden" name="" id="product-id" value="2" />
+                    <img src="../svg/eskrim.png" alt="" id="image">
+                    <p class="product-name">Ice Cream</p>
+                    <p class="product-price">Rp 10.000,00</p>
+                    <button type="button" class="add">Add</button>
+                </div>
+                <div class="perImage">
+                    <input type="hidden" name="" id="product-id" value="3" />
+                    <img src="../svg/blacktea.png" alt="" id="image">
+                    <p class="product-name">Black Tea</p>
+                    <p class="product-price">Rp 20.000,00</p>
+                    <button type="button" class="add">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bestSeller">
+            <h2>Best Seller</h2>
+            <div class="BSimg">
+                <div class="perImage">
+                    <img src="../svg/latte.png" alt="">
+                    <p>Original Latte</p>
+                    <p>Rp 15.000,00</p>
+                    <button type="button" class="add">Add</button>
+                </div>
+                <div class="perImage">
+                    <img src="../svg/sundae.png" alt="">
+                    <p>Sundae Waffle</p>
+                    <p>Rp 20.000,00</p>
+                    <button type="button" class="add">Add</button>
+                </div>
+                <div class="perImage">
+                    <img src="../svg/ocha.png" alt="">
+                    <p>Ocha Tea</p>
+                    <p>Rp 15.000,00</p>
+                    <button type="button" class="add">Add</button>
+                </div>
+            </div>
+        </div>
+    </product>
+
+    <quality>
+
+        <div class="quaImage-indonesia">
+            <img src="../svg/indonesia.svg" alt="">
+            <p>Delivery all area in Indonesia</p>
+        </div>
+        <div class="quaImage">
+            <img src="../svg/using-the-best-ingridient.svg" alt="">
+            <p>Using the best ingredients</p>
+        </div>
+        <div class="quaImage">
+            <img src="../svg/fresh.svg" alt="">
+            <p>Total freshness product</p>
+        </div>
+        <div class="quaImage">
+            <img src="../svg/promotion.svg" alt="">
+            <p>Many promotion included</p>
+        </div>
+        <div class="quaImage-delicacy">
+            <img src="../svg/delicacy gurantee.svg" alt="">
+            <p>Delicacy guarantee</p>
+        </div>
+
+    </quality>
+
+    <aboutUs>
+        <div class="AUtext">
+            <h2>About Us</h2>
+        </div>
+
+        <div class="ourIdeation">
+            <img src="../svg/ideation.svg" alt="">
+            <div class="OItext">
+                <h2>Our ideation</h2>
+                <p>Caffein Line adopts a fresh-to-cup concept serving a selection of
+                    Indonesian local coffees. Our trendy presentation and still
+                    presenting classic coffee flavored products is our promise.
+                </p>
+            </div>
+        </div>
+
+        <div class="ourQuality">
+            <div class="OQtext">
+                <h2>Our product quality</h2>
+                <p>To maintain the quality, we use beans that are purchased
+                    directly from farmers and are processed carefully, we also
+                    roast these coffee beans to international standards by
+                    competent roasters so as to ensure
+                    a consistent taste when drunk.
+                </p>
+            </div>
+            <img src="../svg/our-product-quality.svg" alt="">
+        </div>
+
+        <div class="ourJourney">
+            <div class="OJtext">
+               <h2>Our Journey</h2>
+            </div>
+        </div>
+        <img src="../svg/journey.jpg" alt="">
+
+    </aboutUs>
+    
+    <footer>
+        <div class="footerLogo">
+            <a href="https://www.instagram.com/" target="_blank"><img class="footlogoimg" src="../svg/instagram.svg" alt=""></a>
+            <a href="https://www.facebook.com/" target="_blank"><img class="footlogoimg" src="../svg/facebook.svg" alt=""></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="footlogoimg" src="../svg/linked-in.svg" alt=""></a>
+            <a href="https://twitter.com/" target="_blank"><img class="footlogoimg" src="../svg/twitter.svg" alt=""></a>
+        </div>
+        
+        <div class="content">
+            <a href="home.html">HOME</a>
+            <a href="">MENU</a>
+            <a href=""><img src="../svg/logo.svg" alt=""></a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="payment.html">PAYMENT</a>
+        </div>
+
+        <div class="copyright">
+            <p>COPYRIGHT &#xa9; 2021</p>
+        </div>
+
+        <div class="disclaimer">
+            <u>Disclaimer</u>
+            <p>*Delivery fee is free*</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

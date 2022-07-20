@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../CSS/contactUs-style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">
+            <img class="logo" src="../svg/logo.svg" alt="">
+        </a>
+        
+        <ul>
+            <li>
+                <p class="menu">Menu <i class="fas fa-caret-down"></i></p>
+                <ul>
+                    <li><a href="beverage.html">Beverages</a></li>
+                    <li><a href="dessert.html">Desserts</a></li>
+                </ul>   
+            </li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li>
+                <div class="iconShopping">
+				<p id="total-counter">0</p>
+				<a href="payment.html">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+			    </div>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="logo">
+            <a href="https://www.instagram.com/" target="_blank"><img class="logoimg" src="../svg/instagram.svg" alt=""></a>
+            <a href="https://www.facebook.com/" target="_blank"><img class="logoimg" src="../svg/facebook.svg" alt=""></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="logoimg" src="../svg/linked-in.svg" alt=""></a>
+            <a href="https://twitter.com/" target="_blank"><img class="logoimg" src="../svg/twitter.svg" alt=""></a>
+        </div>
+
+        <div class="info">
+            <div class="contact">
+                <h1 class="head">Contact</h1>
+                <p class="text">
+                    Any question or problem that involve or product?<br>
+                    Dont hesitate to keep in touch with our admin, we will give the best experiece that you never had before. <br>
+                    Below the info of our shop:
+                </p>
+            </div>
+
+            <div class="other">
+                <h4 class="head headOther">Address</h4>
+                <p class="text">
+                    Jl. Alam Sutera Boulevard No. 1, Alam Sutera, Serpong, <br>
+                    Pakulonan, Tangerang, Pakulonan, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15325 <br>
+                </p>
+            </div>
+            <div class="other">
+                <h4 class="head headOther">Phone</h4>
+                <p class="text">(021) 15153696969</p>
+            </div>
+            <div class="other">
+                <h4 class="head headOther">E-mail</h4>
+                <p class="text">binusproject_HCI@caffeinline.co.id</p>
+            </div>
+
+            <div class="copyright">
+                <p>COPYRIGHT &#xa9; 2021</p>
+            </div>
+
+            <div class="disclaimer">
+                <u>Disclaimer</u>
+                <p>*Delivery fee is free*</p>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <h1>Contact Form</h1>
+                <div id="error_message"></div>
+                <form id="myform" onsubmit="return validate();">
+                    <div class="input_field">
+                        <label for="">Your Name</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="input_field">
+                        <label for="">Email</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="input_field">
+                        <label for="">Message</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                  <div class="btn">
+                    <button id="submit">Submit</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+
+
+        <script src="../JS/validationcontact.js"></script>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  background-color: #f1921a;
+  height: 5rem;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  align-items: center;
+}
+
+.navbar .menu:hover {
+  cursor: default;
+}
+
+.navbar a {
+  position: relative;
+  max-width: 1rem;
+}
+
+.navbar a .logo {
+  margin-left: 10px;
+  width: 100px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  margin-right: 3%;
+}
+
+.navbar ul a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.navbar ul a:hover {
+  color: white;
+}
+
+.navbar ul li {
+  display: block;
+}
+
+.navbar ul li ul {
+  background-color: wheat;
+  position: absolute;
+  width: inherit;
+  margin-top: 2px;
+}
+
+.navbar ul li ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar ul li ul {
+  display: none;
+}
+
+.navbar ul li:hover .menu {
+  color: white;
+}
+
+.navbar ul li:hover ul {
+  display: block;
+}
+
+.navbar ul li #troli {
+  width: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul li ul {
+    position: relative;
+  }
+}
+
+/* troli */
+
+.navbar ul li .iconShopping {
+  cursor: pointer;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.navbar ul li .iconShopping p {
+  position: absolute;
+  top: -5px;
+  right: 2px;
+  font-size: 0.69rem;
+  background-color: white;
+  padding: 0px 5px;
+  border-radius: 60%;
+  z-index: 1;
+}
+
+/* SlideShow */
+slideShow {
+  box-sizing: border-box;
+}
+
+.slideshowContainer {
+  /* border: 1px solid rgb(160, 88, 49); */
+  border-radius: 10px;
+  top: 100px;
+  width: auto;
+  position: relative;
+  margin: 0px 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.imgSlide {
+  width: 900px;
+  margin: 50px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f1921a;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  color: white;
+  background-color: #f1921a;
+}
+
+.slideDot {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  left: 50px;
+  bottom: 70px;
+  background-color: rgba(255, 255, 255, 0.5);
+  
+  padding: 4px;
+  border-radius: 100px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: white;
+  border: 0.5px solid #f1921a;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #f1921a;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* product */
+
+product {
+  display: flex;
+  margin: 0px 200px;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+}
+
+.add {
+  width: 70px;
+  border: 0.5px solid #f1921a;
+  border-radius: 300px;
+  padding: 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin: 10px 10px;
+  transition: 1s;
+}
+
+product .newProduct .NPimg .perImage .add:last-child {
+  color: black;
+  background: transparent;
+}
+
+product .newProduct .NPimg .perImage .add:hover {
+  background-color: #f1921a;
+}
+
+/* newProduct */
+.newProduct .NPimg {
+  display: flex;
+}
+
+.newProduct .NPimg .perImage {
+  width: 120px;
+  border: 0.5px solid #f1921a;
+  padding: 2px;
+  margin-right: 20px;
+  margin-top: 2%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.newProduct .NPimg .perImage img {
+  padding-top: 5%;
+  height: 90px;
+}
+
+.newProduct {
+  margin-bottom: 1%;
+}
+
+/* BestSeller */
+
+.bestSeller .BSimg {
+  display: flex;
+}
+
+.bestSeller h2 {
+  margin-left: 4%;
+}
+
+.bestSeller .BSimg .perImage {
+  width: 120px;
+  border: 0.5px solid #f1921a;
+  padding: 2px;
+  margin-right: 20px;
+  margin-top: 2%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.bestSeller .BSimg .perImage img {
+  padding-top: 5%;
+  height: 90px;
+}
+
+product .bestSeller .BSimg .perImage .add:last-child {
+  color: black;
+  background: transparent;
+}
+
+product .bestSeller .BSimg .perImage .add:hover {
+  background-color: #f1921a;
+}
+
+/* Quality */
+quality {
+  display: flex;
+  margin: 20px 200px;
+  border: 0.5px solid #f1921a;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+quality p{
+    font-size: 15px;
+    text-align: center;
+}
+
+quality .quaImage {
+  margin: 20px 0px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+quality .quaImage {
+  margin: 20px 0px;
+  width: 150px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.quaImage-delicacy img{
+  width: 200px;
+}
+
+.quaImage-delicacy p{
+ margin-top: -20px;
+ 
+}
+
+quality {
+  margin-bottom: 2%;
+}
+
+/* About us */
+
+aboutUs .AUtext h2 {
+  margin-top: 2%;
+}
+
+aboutUs {
+  margin-top: 10%;
+  border: 0.5px solid #f1921a;
+  border-radius: 10px;
+  margin: 0 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+}
+
+aboutUs .AUtext {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+aboutUs .ourIdeation {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 30%;
+  /* align-items: center; */
+}
+
+aboutUs .ourIdeation img {
+  width: 275px;
+}
+
+aboutUs .ourIdeation .OItext {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  text-align: justify;
+}
+
+aboutUs .ourQuality {
+  margin-top: 30px;
+  margin-left: 20%;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+}
+
+aboutUs .ourQuality img {
+  width: 275px;
+}
+
+aboutUs .ourQuality .OQtext {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  text-align: right;
+  margin-right: 2%;
+}
+
+aboutUs .ourJourney .OJtext {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+aboutUs .ourJourney img {
+  display: flex;
+  width: auto;
+  margin: auto;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 50px;
+  height: 100%;
+  background-color: #f1921a;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footerLogo {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+footer .footerLogo .footlogoimg {
+  width: 70px;
+  height: 70px;
+}
+
+footer .footerLogo .footlogoimg a {
+  padding: 0px;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 430px;
+  align-items: center;
+  margin: 5px 15px;
+  margin-left: 5%;
+}
+
+footer .content a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+footer .content a:hover {
+  color: #e7bb85;
+  transition: 0.3s;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+footer .content a img {
+  width: 100px;
+}
+
+footer .disclaimer {
+  text-align: right;
+  color: black;
+}
+
+.disclaimer u {
+  color: red;
+  margin-right: 2%;
+}

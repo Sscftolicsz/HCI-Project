@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    background-color: #f1921a;
+    height: 5rem;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar .menu:hover{
+    cursor: default;
+}
+
+.navbar a{
+    position: relative;
+    max-width: 1rem;
+}
+
+.navbar a .logo{
+    margin-left: 10px;
+    width: 100px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    margin-right: 3%;
+}
+
+.navbar ul a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.navbar ul a:hover{
+    color:white;
+}
+
+.navbar ul li{
+    display: block;
+}
+
+.navbar ul li ul{
+    background-color: wheat;
+    position: absolute;
+    width: inherit;
+    margin-top: 2px;
+}
+
+.navbar ul li ul li{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar ul li ul{
+    display: none;
+}
+
+.navbar ul li:hover .menu{
+    color: white;
+}
+
+.navbar ul li:hover ul{
+    display: block;
+}
+
+.navbar ul li #troli{
+    width: 30px;
+}
+
+@media screen and (max-width: 500px){
+    nav ul li{
+        display: block;
+        width: 100%; 
+    }
+    nav ul li ul{
+        position: relative;
+    }
+}
+
+/* troli */
+
+.navbar ul li .iconShopping{
+	cursor: pointer;
+	position: relative;
+	font-size: 1.1rem;
+    padding: 0px;
+}
+
+.navbar ul li .iconShopping p{
+	position: absolute;
+	top: -5px;
+	right: 2px;
+	font-size: 0.69rem;
+	background-color:white;
+	padding: 0px 5px;
+	border-radius: 60%;
+    z-index: 1;
+}
+
+/* Main */
+main{
+    padding-top: 5rem;
+    width: 100%;
+}
+
+input{
+    padding: 0px 3px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+
+.title{
+    font-weight: normal;
+}
+
+.form{
+    margin-top: 10px; 
+    display: flex;
+    justify-content: space-between;  
+}
+
+.input-border{
+    border: 0.5px solid rgb(160, 88, 49);
+    border-radius: 4px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.input-address{
+    border: 0.5px solid rgb(160, 88, 49);
+    border-radius: 4px;
+    width: 250px;
+    height: 100px;
+    resize: none;
+    outline: none;
+    padding: 0px 3px;
+}
+
+.total-wrapper{
+    border: 0.5px solid rgb(160, 88, 49);
+    width: 300px;
+    height: auto;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.choose-payment{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Visa */
+.visa-payment{
+    border: 0.5px solid rgb(160, 88, 49);
+    width: auto;
+    padding: 10px 10px 20px;  
+}
+
+.card-number{
+    margin-bottom: 10px;
+}
+
+.visa-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.visa-border{
+    border: 0.5px solid rgb(160, 88, 49);
+    border-radius: 4px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.visa-validity .visa-date{
+    border: 0.5px solid rgb(160, 88, 49);
+    border-radius: 4px;
+}
+
+.cvv-number{
+    margin-top: 10px;
+}
+
+.cvv-border{
+    border: 0.5px solid rgb(160, 88, 49);
+    border-radius: 4px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Paypal */
+
+.paypal-payment{
+    display: none;
+}
+
+.paypal-pay{
+    padding: 10px 25px;
+    background-color: transparent; 
+    border:0.5px solid rgb(160, 88, 49);
+    border-radius: 7px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.paypal-pay:hover{
+    cursor: pointer;
+    background-color: #f1921a;
+}
+
+.paypal-pay img{
+    width: 100%;
+}
+
+/* Finishing */
+
+.term-condition{
+    margin-top: 30px;
+}
+
+.term-condition-checkbox{
+    cursor: pointer;
+}
+
+.checkout-button-wrapper{
+    margin: 20px 0px;
+}
+
+.checkout-button{
+    padding: 10px 25px;
+    background-color: transparent; 
+    border:0.5px solid rgb(160, 88, 49);
+    border-radius: 7px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.checkout-button:hover{
+    cursor: pointer;
+    background-color: #f1921a;
+}
+
+.button{
+    cursor: pointer;
+}
+
+.button-visa:checked ~ .visa-payment{
+    display: block;
+}
+
+.error{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: red;
+}
+
+.disclaimer u{
+    color: red;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    height: 100%;
+    background-color: #f1921a;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer .footerLogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  footer .footerLogo .footlogoimg {
+    width: 70px;
+    height: 70px;
+  }
+  
+  footer .footerLogo .footlogoimg a {
+    padding: 0px;
+  }
+  
+  footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 430px;
+    align-items: center;
+    margin: 5px 15px;
+    margin-left: 5%;
+  }
+  
+  footer .content a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  footer .content a:hover {
+    color: #e7bb85;
+    transition: 0.3s;
+  }
+  
+  footer .copyright {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  
+  footer .content a img {
+    width: 100px;
+  }
+  
+  footer .disclaimer {
+    text-align: right;
+    color: black;
+  }
+  
+  .disclaimer u {
+    color: red;
+    margin-right: 2%;
+  }
+  
+
